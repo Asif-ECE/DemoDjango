@@ -1,0 +1,45 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonContainer {
+    margin-top: 10px;
+    display: flex;
+    align-items: space-between;
+}
+
+.inputArea {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.inputArea label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inputArea input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}

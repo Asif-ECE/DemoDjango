@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Home Page {% endblock %}
+
+{% block content %}
+<h2>List of Students</h2>
+<ol>
+    {% for student in students %}
+    <li>Id: {{ student.id }} | Name: {{ student.name }} | Roll: {{ student.roll }}</li>
+    {% endfor %}
+    <a href="{% url 'addStudent' %}">
+        <button>Add Student</button>
+    </a>
+</ol>
+{% endblock %}
